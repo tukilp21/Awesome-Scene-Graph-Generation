@@ -413,22 +413,27 @@ There are three subtasks:
 Compared with traditional scene graph, each object is grounded by `a panoptic segmentation mask` in PSG, achieving a compresensive structured scene representation.
 
 + (checked) [**SPADE: Spatial-Aware Denoising Network for Open-vocabulary Panoptic Scene Graph Generation with Long- and Local-range Context Reasoning**](https://arxiv.org/pdf/2507.05798) [![Paper](https://img.shields.io/badge/ICCV25-00CED1)]() [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://8078qwe.github.io/SPADE/)
-<details><summary>diffusion-based framework
-PSG</summary>
-  - zero-shot approach leverage commonsense/structured knowledge >>> pretrained multi-modal models 
-  
-  [orig] In this paper, they introduced SPADE, a novel spatialaware diffusion-based framework for open-vocabulary PSG. SPADE addresses the limitations of VLM-based PSG models, particularly their weaknesses in spatial relation reasoning. Our approach consists of two key steps: inversion-guided calibration and spatial-aware context reasoning. First, we fine-tune a pre-trained teacher diffusion model into a PSG-specific denoising network using crossattention maps from inversion, optimized with a lightweight LoRA-based calibration strategy. Second, we introduce a spatial-aware relation graph transformer that captures both local and long-range contextual dependencies, improving relation query generation
-</details>
+  <details>
+    <summary>diffusion-based framework PSG</summary>
+    - zero-shot approach leverage commonsense/structured knowledge >>> pretrained multi-modal models 
+
+    - [orig] In this paper, they introduced SPADE, a novel spatialaware diffusion-based framework for open-vocabulary PSG. SPADE addresses the limitations of VLM-based PSG models, particularly their weaknesses in spatial relation reasoning. Our approach consists of two key steps: inversion-guided calibration and spatial-aware context reasoning. First, we fine-tune a pre-trained teacher diffusion model into a PSG-specific denoising network using crossattention maps from inversion, optimized with a lightweight LoRA-based calibration strategy. Second, we introduce a spatial-aware relation graph transformer that captures both local and long-range contextual dependencies, improving relation query generation
+  </details>
 
 
 + (checked) [**Relation-R1: Cognitive Chain-of-Thought Guided Reinforcement Learning for Unified Relational Comprehension**](https://arxiv.org/pdf/2504.14642) [![Paper](https://img.shields.io/badge/arXiv25-b22222)]()  [![Star](https://img.shields.io/github/stars/HKUST-LongGroup/Relation-R1.svg?style=social&label=Star)](https://github.com/HKUST-LongGroup/Relation-R1) 
-  <details><summary>R1-enhanced Visual Relation Reasoning - refine RELATION</summary>This work introduces a R1-based Unified framework for joint binary and N-ary relation reasoning with grounded cues.</details>
+  <details>
+    <summary>R1-enhanced Visual Relation Reasoning - refine RELATION</summary>
+    
+    This work introduces a R1-based Unified framework for joint binary and N-ary relation reasoning with grounded cues.
+  </details>
 
 
 + (checked) [**Pair then Relation: Pair-Net for Panoptic Scene Graph Generation**](https://arxiv.org/pdf/2307.08699) [![Paper](https://img.shields.io/badge/TPAMI-ffa07a)]() [![Star](https://img.shields.io/github/stars/king159/Pair-Net.svg?style=social&label=Star)](https://github.com/king159/Pair-Net)
-  <details><summary>My note - refine RELATION</summary>
+  <details>
+    <summary> Good definition of PSG </summary>
   
-  </details>
+  </details> 
 
 
 + [**From Easy to Hard: Learning Curricular Shape-aware Features for Robust Panoptic Scene Graph Generation**](https://arxiv.org/pdf/2407.09191)  [![Paper](https://img.shields.io/badge/IJCV24-b22222)]()
@@ -588,7 +593,7 @@ Compared with 2D scene graph Generation, the input of 3D SGG is point cloud.
 
 
 
-+ **Blief Scene Graph**
++ **Belief Scene Graph**
 
   A utility-enhanced extension of a given incomplete scene graph $G^{'}$, by incorporating objects in $C$ (i.e., the object sets relevant for a robotic mission) into $G^{'}$, using the learnt CECI (i.e., Computation of Expectation of finding objects in $C$ based on Correlation Information) information. Belief Scene Graphs enable highlevel reasoning and optimized task planning involving set $C$, which was impossible with the incomplete $G^{'}$.
   <details><summary>中文解释</summary>“信念场景图” (Belief Scene Graphs, BSG), 它是对传统3D场景图的扩展，旨在利用局部信息进行高效的高级任务规划。论文的核心在于提出了一种基于图的学习方法，用于计算3D场景图上的“信念”（belief），也称为“期望”（expectation）。这种期望被用来策略性地添加新的节点（称为“盲节点”blind nodes），这些节点与机器人任务相关，但尚未被实际观察到。</details>
@@ -599,11 +604,11 @@ Compared with 2D scene graph Generation, the input of 3D SGG is point cloud.
 
 
 
-+ [**GaussianGraph: 3D Gaussian-based Scene Graph Generation for Open-world Scene Understanding**](https://arxiv.org/pdf/2503.04034) [![Paper](https://img.shields.io/badge/IROS2025-b22222)]() [![Star](https://img.shields.io/github/stars/WangXihan-bit/GaussianGraph.svg?style=social&label=Star)](https://github.com/WangXihan-bit/GaussianGraph)  [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://wangxihan-bit.github.io/GaussianGraph/)
++ checked [**GaussianGraph: 3D Gaussian-based Scene Graph Generation for Open-world Scene Understanding**](https://arxiv.org/pdf/2503.04034) [![Paper](https://img.shields.io/badge/IROS2025-b22222)]() [![Star](https://img.shields.io/github/stars/WangXihan-bit/GaussianGraph.svg?style=social&label=Star)](https://github.com/WangXihan-bit/GaussianGraph)  [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://wangxihan-bit.github.io/GaussianGraph/)
 
-+ [**DynamicGSG: Dynamic 3D Gaussian Scene Graphs for Environment Adaptation**](https://arxiv.org/pdf/2502.15309) [![Paper](https://img.shields.io/badge/arXiv25-b22222)]() [![Star](https://img.shields.io/github/stars/GeLuzhou/Dynamic-GSG.svg?style=social&label=Star)](https://github.com/GeLuzhou/Dynamic-GSG)
++ checked [**DynamicGSG: Dynamic 3D Gaussian Scene Graphs for Environment Adaptation**](https://arxiv.org/pdf/2502.15309) [![Paper](https://img.shields.io/badge/arXiv25-b22222)]() [![Star](https://img.shields.io/github/stars/GeLuzhou/Dynamic-GSG.svg?style=social&label=Star)](https://github.com/GeLuzhou/Dynamic-GSG)
 
-+ [**ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning**](https://arxiv.org/pdf/2309.16650) [![Paper](https://img.shields.io/badge/arXiv24-b22222)]() [![Star](https://img.shields.io/github/stars/concept-graphs/concept-graphs.svg?style=social&label=Star)](https://github.com/concept-graphs/concept-graphs)  [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://concept-graphs.github.io/)
++ checked [**ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning**](https://arxiv.org/pdf/2309.16650) [![Paper](https://img.shields.io/badge/arXiv24-b22222)]() [![Star](https://img.shields.io/github/stars/concept-graphs/concept-graphs.svg?style=social&label=Star)](https://github.com/concept-graphs/concept-graphs)  [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://concept-graphs.github.io/)
 
 + [**Point2Graph: An End-to-end Point Cloud-based 3D Open-Vocabulary Scene Graph for Robot Navigation**](https://arxiv.org/pdf/2409.10350) [![Paper](https://img.shields.io/badge/arXiv24-b22222)]() [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://point2graph.github.io/)
 
@@ -616,7 +621,11 @@ Compared with 2D scene graph Generation, the input of 3D SGG is point cloud.
 + [**SGRec3D: Self-Supervised 3D Scene Graph Learning via Object-Level Scene Reconstruction**](https://arxiv.org/pdf/2309.15702)  [![Paper](https://img.shields.io/badge/WACV24-800080)]() [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://kochsebastian.com/sgrec3d)
 
 + [**Open3DSG: Open-Vocabulary 3D Scene Graphs from Point Clouds with Queryable Objects and Open-Set Relationships**](https://kochsebastian.com/open3dsg) [![Paper](https://img.shields.io/badge/CVPR24-8A2BE2)]() [![Star](https://img.shields.io/github/stars/boschresearch/Open3DSG.svg?style=social&label=Star)](https://github.com/boschresearch/Open3DSG) [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://kochsebastian.com/open3dsg)
-
+   <details><summary> enhance Relation reasoning </summary>
+  - freezed model
+  - instructBLIP Qformer + LLM for Relationship 
+   </details>
+    
 + [**CLIP-Driven Open-Vocabulary 3D Scene Graph Generation via Cross-Modality Contrastive Learning**](https://openaccess.thecvf.com/content/CVPR2024/papers/Chen_CLIP-Driven_Open-Vocabulary_3D_Scene_Graph_Generation_via_Cross-Modality_Contrastive_Learning_CVPR_2024_paper.pdf) [![Paper](https://img.shields.io/badge/CVPR24-8A2BE2)]()
 
 + [**Incremental 3D Semantic Scene Graph Prediction from RGB Sequences**](https://openaccess.thecvf.com/content/CVPR2023/papers/Wu_Incremental_3D_Semantic_Scene_Graph_Prediction_From_RGB_Sequences_CVPR_2023_paper.pdf) [![Paper](https://img.shields.io/badge/CVPR23-8A2BE2)]() [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://shunchengwu.github.io/MonoSSG)
