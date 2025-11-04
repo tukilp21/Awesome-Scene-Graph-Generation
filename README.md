@@ -408,21 +408,27 @@ There are three subtasks:
 
 
 
-## Panoptic Scene Graph Generation
+## `Panoptic Scene Graph Generation` - checked
 
 Compared with traditional scene graph, each object is grounded by `a panoptic segmentation mask` in PSG, achieving a compresensive structured scene representation.
 
-+ [**SPADE: Spatial-Aware Denoising Network for Open-vocabulary Panoptic Scene Graph Generation with Long- and Local-range Context Reasoning**](https://arxiv.org/pdf/2507.05798) [![Paper](https://img.shields.io/badge/ICCV25-00CED1)]() [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://8078qwe.github.io/SPADE/)
-<details><summary>a novel spatialaware diffusion-based framework for open-vocabulary
-PSG</summary>In this paper, they introduced SPADE, a novel spatialaware diffusion-based framework for open-vocabulary PSG. SPADE addresses the limitations of VLM-based PSG models, particularly their weaknesses in spatial relation reasoning. Our approach consists of two key steps: inversion-guided calibration and spatial-aware context reasoning. First, we fine-tune a pre-trained teacher diffusion model into a PSG-specific denoising network using crossattention maps from inversion, optimized with a lightweight LoRA-based calibration strategy. Second, we introduce a spatial-aware relation graph transformer that captures both local and long-range contextual dependencies, improving relation query generation</details>
++ (checked) [**SPADE: Spatial-Aware Denoising Network for Open-vocabulary Panoptic Scene Graph Generation with Long- and Local-range Context Reasoning**](https://arxiv.org/pdf/2507.05798) [![Paper](https://img.shields.io/badge/ICCV25-00CED1)]() [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://8078qwe.github.io/SPADE/)
+<details><summary>diffusion-based framework
+PSG</summary>
+  - zero-shot approach leverage commonsense/structured knowledge >>> pretrained multi-modal models 
+  
+  [orig] In this paper, they introduced SPADE, a novel spatialaware diffusion-based framework for open-vocabulary PSG. SPADE addresses the limitations of VLM-based PSG models, particularly their weaknesses in spatial relation reasoning. Our approach consists of two key steps: inversion-guided calibration and spatial-aware context reasoning. First, we fine-tune a pre-trained teacher diffusion model into a PSG-specific denoising network using crossattention maps from inversion, optimized with a lightweight LoRA-based calibration strategy. Second, we introduce a spatial-aware relation graph transformer that captures both local and long-range contextual dependencies, improving relation query generation
+</details>
 
 
-+ [**Relation-R1: Cognitive Chain-of-Thought Guided Reinforcement Learning for Unified Relational Comprehension**](https://arxiv.org/pdf/2504.14642) [![Paper](https://img.shields.io/badge/arXiv25-b22222)]()  [![Star](https://img.shields.io/github/stars/HKUST-LongGroup/Relation-R1.svg?style=social&label=Star)](https://github.com/HKUST-LongGroup/Relation-R1)
-  <details><summary>R1-enhanced Visual Relation Reasoning</summary>This work introduces a R1-based Unified framework for joint binary and N-ary relation reasoning with grounded cues.</details>
++ (checked) [**Relation-R1: Cognitive Chain-of-Thought Guided Reinforcement Learning for Unified Relational Comprehension**](https://arxiv.org/pdf/2504.14642) [![Paper](https://img.shields.io/badge/arXiv25-b22222)]()  [![Star](https://img.shields.io/github/stars/HKUST-LongGroup/Relation-R1.svg?style=social&label=Star)](https://github.com/HKUST-LongGroup/Relation-R1) 
+  <details><summary>R1-enhanced Visual Relation Reasoning - refine RELATION</summary>This work introduces a R1-based Unified framework for joint binary and N-ary relation reasoning with grounded cues.</details>
 
 
-+ [**Pair then Relation: Pair-Net for Panoptic Scene Graph Generation**](https://arxiv.org/pdf/2307.08699) [![Paper](https://img.shields.io/badge/TPAMI-ffa07a)]() [![Star](https://img.shields.io/github/stars/king159/Pair-Net.svg?style=social&label=Star)](https://github.com/king159/Pair-Net)
-
++ (checked) [**Pair then Relation: Pair-Net for Panoptic Scene Graph Generation**](https://arxiv.org/pdf/2307.08699) [![Paper](https://img.shields.io/badge/TPAMI-ffa07a)]() [![Star](https://img.shields.io/github/stars/king159/Pair-Net.svg?style=social&label=Star)](https://github.com/king159/Pair-Net)
+  <details><summary>My note - refine RELATION</summary>
+  
+  </details>
 
 
 + [**From Easy to Hard: Learning Curricular Shape-aware Features for Robust Panoptic Scene Graph Generation**](https://arxiv.org/pdf/2407.09191)  [![Paper](https://img.shields.io/badge/IJCV24-b22222)]()
